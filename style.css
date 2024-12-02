@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Advent Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* ******************* NAVBAR ******************* */
+nav {
+  overflow: hidden;
+  background-color: #ddb892;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+
+}
+header li {
+  float: right;
+  font-size: 1.2em;
+}
+header li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+}
+#logo {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  float: left;
+}
+/* **************** IMAGE PRINCIPALE ************* */
+#imagePrincipale {
+  padding-top: 60px;
+  background: url(media/5bee73149ee66263f8242e6402054bb5.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 799px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 6em;
+  margin-top: 100px;
+  text-shadow: 1px 3px 2px rgb(0, 0, 0);
+}
+#premierTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #FFFAE1;
+  box-shadow: 1px 3px 2px black;
+}
+h3 {
+  text-align: center;
+  color:rgb(254, 254, 254);
+  font-size: 3em;
+  text-shadow: 1px 3px 2px black;
+}
+/* *************** PRESENTATION ********************** */
+#presentation {
+  background-color: #FFFAE1;
+  padding: 10px 0px 100px 0;
+}
+#texteIntro {
+  padding: 0px 20%;
+}
+#prestations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10%;  
+}
+.imagesPrestations h4 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 15px;
+  font-weight: 300;
+}
+.imagesPrestations img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+.imagesPrestations img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+/* **************** TOURISME ********************** */
+/* Style générique pour tous les éléments de menu */
+#menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+.menu-item a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Exemple de styles spécifiques pour chaque élément de menu */
+
+/* Style pour l'élément "Événements" */
+#event a {
+  color: #000000; /* Une couleur spécifique pour cet élément */
+}
+
+#event a:hover {
+  background-color: #FF5733;
+  color: #fff;
+}
+#langue a {
+  color: #000000;
+}
+#langue a:hover {
+  background-color: #0b9248;
+  color: #fff; 
+}
+
+#contact a{
+  color: #000000;
+}
+#contact a:hover {
+  background-color: #6d3512;
+  color: #FFF;
+}
+/* Style pour l'élément "Faites un don" */
+#don a {
+  color: #000000; /* Une couleur spécifique pour cet élément */
+}
+
+#don a:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+h2 { 
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 3em;
+  text-shadow: 1px 3px 2px black;
+}
+.imagesPrestations img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+/* Style pour l'élément "Horaire de prière" */
+#reserver a {
+  color: #000000; /* Une couleur spécifique pour cet élément */
+}
+
+#reserver a:hover {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+/* Style pour l'élément "Cours de Coran" */
+#cours a {
+  color: #000000; /* Une couleur spécifique pour cet élément */
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+#cours a:hover {
+  background-color: #9C27B0;
+  color: #fff;
+}
+
+/* Style pour l'élément "Actualités" */
+#actu a {
+  color: #000000; /* Une couleur spécifique pour cet élément */
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+#actu a:hover {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+/* Optionnel : Ajouter un effet global lorsque l'on survole tous les éléments */
+.menu-item a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+
+
+#tourisme {
+
+
+  height: 1400px;
+  background-color: #f1f2f6;
+  padding: 1px 2%;
+}
+#tourisme h2 {
+  padding-top: 60px;
+}
+#ocean {
+  background: url(media/ocean.jpg);
+}
+#chateau {
+  background: url(media/chateau.JPG);
+}
+#phare {
+  background: url(media/phare.JPG);
+}
+#vignoble {
+  background: url(media/vignes.jpg);
+}
+#tourisme li {
+  margin: 65px 100px 0 100px;
+  height: 226px;
+  width: 55%;
+  max-width: 550px;
+  float: left;
+  box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+#tourisme p {
+  height: 45px;
+  width: 235px;
+  background-color: #01DF74;
+  float:right;
+  margin: 50px -180px 0 0;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
+}
+#tourisme #chateau, #tourisme #vignoble {
+  float: right;
+}
+#chateau p, #vignoble p {
+  float: left;
+  background-color: cyan;
+  margin-left: -180px;
+  box-shadow: -4px 4px 0 1px rgba(15,154,156,1);
+}
+/* ******************* FOOTER ******************** */
+footer {
+  background-color: #524A3A;
+  color: #FFFAE1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+input, textarea, button {
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: 'Advent Pro', sans-serif;
+  border-radius: 8px;
+}
+textarea {
+  height: 120px;
+}
+button {
+  font-size: 1.5em;
+  background-color: #FFFAE1;
+}
+button:hover {
+  background-color: #e55039;
+  color: #FFFAE1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #FFFAE1;
+  margin: 60px auto;
+}
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: #FFFAE1;
+}
+#icons {
+  width: 50%;
+  text-align: right;
+}
+#icons a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: #FFFAE1;
+}
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
+/* Style global pour toutes les sections */
+.section {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 1.2em;
+  color: #555;
+  text-align: justify;
+}
+
+/* Modification de la section "Langue" */
+.langue {
+  background-color: #FFFAE1;
+  border-left: 5px solid #3498db;
+}
+
+.langue h2 {
+  color: #3498db;
+}
+
+/* Modification de la section "Actualités" */
+.actu {
+  background-color: #FFFAE1;
+  border-left: 5px solid #e74c3c;
+}
+
+.actu h2 {
+  color: #e74c3c;
+}
+
+/* Modification de la section "Cours" */
+.cours {
+  background-color: #FFFAE1;
+  border-left: 5px solid #2ecc71;
+}
+
+.cours h2 {
+  color: #2ecc71;
+}
+
+/* Modification de la section "Horaire de Prière" */
+.reserver {
+  background-color: #FFFAE1;
+  border-left: 5px solid #9b59b6;
+}
+
+.reserver h2 {
+  color: #9b59b6;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+
+/* Modification de la section "Don" */
+
+
+/* Augmenter la taille des titres */
+section h2 {
+  font-size: 28px; /* Augmente la taille des titres */
+  line-height: 1.4; /* Ajuste l'espacement vertical */
+}
+
+/* Augmenter la taille des paragraphes */
+section p {
+  font-size: 18px; /* Taille du texte des paragraphes */
+  line-height: 1.6; /* Meilleure lisibilité */
+}
+
+.don-section {
+  padding: 50px 20px;
+  background-color: #FFFAE1;
+  border-left: 5px solid #f39c12;
+  border-radius: 16px;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.don-section h2 {
+  color:#f39c12;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.don-content p {
+  font-size: 24px;
+  line-height: 1.8;
+  color:#000;
+  margin-bottom: 30px;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow .slide {
+  width: 100%;
+  display: none; /* Toutes les images sont masquées par défaut */
+}
+
+.slideshow .slide:first-child {
+  display: block; /* Affiche la première image */
+}
+
+/* Boutons de Don */
+.don-buttons {
+  margin-top: 20px;
+}
+
+.don-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--yellow);
+  color: var(--dark-gray);
+}
+
+.btn-secondary {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+/* Modification de la section "Événements" */
+.event {
+  background-color: #FFFAE1;
+  border-left: 5px solid #16a085;
+}
+
+.event h2 {
+  color: #16a085;
+}
+
+
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #276fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.popup h2 {
+  color:#000000;
+  margin-bottom: 10px;
+}
+
+.popup .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style par défaut des boutons */
+.btn-primary {
+  background-color: #0b9248; /* Vert par défaut */
+  color: #f1f2f6; /* Blanc cassé pour le texte */
+  border: none;
+  transition: background-color 0.3s ease; /* Animation fluide pour le changement de couleur */
+}
+
+.btn-secondary {
+  background-color: #555; /* Gris foncé par défaut */
+  color: #ffffff; /* Texte blanc */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.btn-primary:hover {
+  background-color: green; /* Vert vif au survol */
+  color: #ffffff; /* Texte blanc */
+}
+
+.btn-secondary:hover {
+  background-color: red; /* Rouge vif au survol */
+  color: #ffffff; /* Texte blanc */
+}
+/* Augmenter la taille des titres */
+section h2 {
+  font-size: 28px; /* Augmente la taille des titres */
+  line-height: 1.4; /* Ajuste l'espacement vertical */
+}
+
+/* Augmenter la taille des paragraphes */
+section p {
+  font-size: 18px; /* Taille du texte des paragraphes */
+  line-height: 1.6; /* Meilleure lisibilité */
+}
