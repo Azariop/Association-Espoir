@@ -99,9 +99,11 @@ h3 {
   font-size: 1.8em;
   margin: 15px;
   font-weight: 300;
+ 
 }
 .imagesPrestations img {
   border-radius: 10px;
+  width: 100%;
   box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
 }
 .imagesPrestations img:hover {
