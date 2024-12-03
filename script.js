@@ -4,25 +4,49 @@ document.getElementById('closePopup').addEventListener('click', function() {
 });
 
 
+let slideIndex = 1; // Initialisation de la première diapositive
+showSlides(slideIndex);
 
+// Fonction pour passer à la diapositive suivante/précédente
+function plusSlides(n) {
+    slideIndex += n;
 
-// Gestion du diaporama d'images
-let slideIndex = 0;
+    // Si dépassement des limites, revenir au début ou à la fin
+    const slides = document.getElementsByClassName("custom-slider");
+    if (slideIndex > slides.length) {
+        slideIndex = 1; // Retourner à la première diapositive
+    }
+    if (slideIndex < 1) {
+        slideIndex = slides.length; // Retourner à la dernière diapositive
+    }
 
-function showSlides() {
-    const slides = document.querySelectorAll(".slideshow .slide");
-    slides.forEach((slide, index) => {
-        slide.style.display = index === slideIndex ? "block" : "none";
-    });
-
-    slideIndex = (slideIndex + 1) % slides.length; // Passe à la slide suivante, retourne au début à la fin
+    showSlides(slideIndex);
 }
 
-// Change d'image toutes les 3 secondes
-setInterval(showSlides, 2000);
+// Fonction pour afficher une diapositive spécifique via les points
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides(slideIndex);
+}
 
-// Afficher la première slide immédiatement
-showSlides();
+// Fonction principale pour afficher les diapositives
+function showSlides(n) {
+    const slides = document.getElementsByClassName("custom-slider");
+    const dots = document.getElementsByClassName("dot");
 
+    // Masquer toutes les diapositives
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
+    // Retirer la classe "active" de tous les points
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
 
+    // Afficher uniquement la diapositive courante
+    slides[slideIndex - 1].style.display = "block";
+
+    // Ajouter la classe "active" au point correspondant
+    dots[slideIndex - 1].className += " active";
+}
