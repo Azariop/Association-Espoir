@@ -1,4 +1,4 @@
-// Gérer la fermeture de la pop-up
+
 document.getElementById('closePopup').addEventListener('click', function() {
     document.getElementById('popup').style.display = 'none';
 });
@@ -50,3 +50,6 @@ function showSlides(n) {
     // Ajouter la classe "active" au point correspondant
     dots[slideIndex - 1].className += " active";
 }
+
+
+//modification a faire//

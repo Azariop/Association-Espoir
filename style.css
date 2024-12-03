@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: 'Advent Pro', sans-serif;
   padding: 0;
@@ -79,7 +78,7 @@ h3 {
   font-size: 3em;
   text-shadow: 1px 3px 2px black;
 }
-/* *************** PRESENTATION ********************** */
+/* *************** PRESENTATION ********************* */
 #presentation {
   background-color: #FFFAE1;
   padding: 10px 0px 100px 0;
