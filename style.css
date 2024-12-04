@@ -53,7 +53,7 @@ header li a {
 /* **************** IMAGE PRINCIPALE ************* */
 #imagePrincipale {
   padding-top: 60px;
-  background: url(media/logolong.jpeg) no-repeat fixed 50% 50%;
+  background: url(media/logolong.jpeg) no-repeat fixed 100% 100%;
   background-size: cover;
   height: 799px;
 }
