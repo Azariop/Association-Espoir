@@ -53,17 +53,37 @@ header li a {
 /* **************** IMAGE PRINCIPALE ************* */
 #imagePrincipale {
   padding-top: 60px;
-  background: url(media/logolong.jpeg) no-repeat center center fixed;
-  background-size: cover; /* Assure une couverture totale */
+  background: url(media/logolong\ \(2\).jpeg) no-repeat center center;
+  background-size: contain; /* Garde l'image entière visible sans la couper */
   height: 100vh; /* 100% de la hauteur de la fenêtre */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 16 / 9; /* Maintient un ratio parfait sur tous les écrans */
   box-sizing: border-box; /* Garantit que les paddings/marges sont inclus */
   overflow: hidden; /* Empêche le débordement des éléments */
 }
+
+/* Ajout pour les tailles d'écran spécifiques */
+@media (max-width: 1024px) {
+  #imagePrincipale {
+    background-size: contain; /* Maintient la visibilité entière sur tablette */
+    background-position: center center; /* Reste centré */
+    height: auto; /* Permet une hauteur flexible si nécessaire */
+    min-height: 80vh; /* Évite que la section soit trop petite */
+  }
+}
+
+@media (max-width: 768px) {
+  #imagePrincipale {
+    padding-top: 30px; /* Réduction des paddings sur mobile */
+    background-size: contain; /* Toujours visible en entier */
+    background-position: center center; /* Toujours centré */
+    height: auto; /* Ajustement flexible */
+    min-height: 60vh; /* Assure une visibilité correcte */
+  }
+}
+
 
 /* Titre principal */
 h1 {
