@@ -54,10 +54,10 @@ header li a {
 #imagePrincipale {
   padding-top: 60px;
   background: url(media/logolong\ \(2\).jpeg) no-repeat center center;
-  background-size: contain; /* L'image reste entière */
-  background-color: white; /* Ajoute un fond pour combler les espaces vides */
-  height: 100vh; /* Section pleine hauteur */
-  width: 100%; /* Prend toute la largeur */
+  background-size: contain; /* Garde l'image entière visible */
+  background-color: white; /* Fond pour combler les espaces vides */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  height: calc(100vw * 1237 / 2048); /* Calcule la hauteur basée sur le ratio exact */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,18 +67,11 @@ header li a {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
-  #imagePrincipale {
-    background-size: contain; /* Toujours entier sur tablette */
-    height: 80vh; /* Réduit un peu la hauteur pour les écrans plus petits */
-  }
-}
-
 @media (max-width: 768px) {
   #imagePrincipale {
-    background-size: contain; /* Toujours visible en entier */
-    height: auto; /* Permet à la hauteur de s'ajuster */
-    min-height: 60vh; /* Minimum pour garantir la visibilité */
+    height: auto; /* Permet une hauteur flexible */
+    min-height: 60vh; /* Assure une hauteur minimale sur mobile */
+    background-size: contain; /* Toujours entièrement visible */
   }
 }
 
