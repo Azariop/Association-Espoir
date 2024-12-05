@@ -53,7 +53,7 @@ header li a {
 /* **************** IMAGE PRINCIPALE ************* */
 #imagePrincipale {
   padding-top: 60px;
-  background: url(media/logolong\ \(2\).jpeg) no-repeat center center;
+  background: url(media/logolong.jpeg) no-repeat center center;
   background-size: contain; /* Garde l'image entière visible sans la couper */
   height: 100vh; /* 100% de la hauteur de la fenêtre */
   display: flex;
