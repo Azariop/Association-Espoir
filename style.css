@@ -63,8 +63,6 @@ header li a {
   padding: 15px 20px; /* Espacement du logo */
 }
 
-/* **************** IMAGE PRINCIPALE ************* */
-/* **************** IMAGE PRINCIPALE ************* */
 #imagePrincipale {
   position: relative; /* Permet d'ajuster les enfants si nécessaire */
   width: 100%; /* Prend toute la largeur */
@@ -74,6 +72,10 @@ header li a {
   align-items: center;
   overflow: hidden; /* Évite les débordements */
   background-color: white; /* Couleur de fond en cas d'espaces vides */
+  
+  /* Ajout de la bordure spécifique */
+  border: 5px solid #ccc; /* Bordure grise de 5px (modifiable) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour plus d'esthétique */
 }
 
 /* Intégration de l'image en tant qu'élément enfant */
@@ -95,6 +97,7 @@ header li a {
     max-width: 90%; /* Réduit légèrement la taille de l'image sur mobile */
   }
 }
+
 
 
 /* Trait sous le titre */
