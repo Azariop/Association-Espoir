@@ -54,12 +54,15 @@ header li a {
 #imagePrincipale {
   padding-top: 60px;
   background: url(media/logolong.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh; /* Utilise 100% de la hauteur de la fenêtre */
-  display: flex; /* Utilisation de flexbox pour centrer les contenus */
+  background-size: cover; /* Assure une couverture totale */
+  height: 100vh; /* 100% de la hauteur de la fenêtre */
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 16 / 9; /* Maintient un ratio parfait sur tous les écrans */
+  box-sizing: border-box; /* Garantit que les paddings/marges sont inclus */
+  overflow: hidden; /* Empêche le débordement des éléments */
 }
 
 /* Titre principal */
@@ -67,44 +70,61 @@ h1 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: clamp(3rem, 6vw, 6em); /* Taille responsive */
+  font-size: clamp(2.5rem, 5vw, 6em); /* Taille responsive */
   margin-top: 0;
-  text-shadow: 1px 3px 2px rgb(0, 0, 0);
+  margin-bottom: 20px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7); /* Amélioration des ombres */
 }
 
 /* Trait sous le titre */
 #premierTrait {
-  height: 1px;
+  height: 2px; /* Rendre le trait un peu plus épais */
   width: 25%;
   background-color: #FFFAE1;
-  box-shadow: 1px 3px 2px black;
-  margin: 10px auto; /* Ajuste l'espacement */
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7); /* Ajout d'une ombre subtile */
+  margin: 15px auto; /* Marges plus harmonieuses */
 }
 
 /* Sous-titre */
 h3 {
   text-align: center;
   color: rgb(254, 254, 254);
-  font-size: clamp(1.5rem, 3vw, 3em); /* Taille responsive */
-  text-shadow: 1px 3px 2px black;
+  font-size: clamp(1.8rem, 3vw, 3em); /* Taille responsive */
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7); /* Ombrage plus visible */
+  margin-top: 10px;
 }
 
-/* Media Queries (pour ajustements supplémentaires si nécessaire) */
-@media (max-width: 768px) {
+/* Responsive Design: Mobile et Tablette */
+@media (max-width: 1024px) {
   #imagePrincipale {
-    padding-top: 30px; /* Réduction du padding sur mobile */
+    padding: 30px; /* Réduction des paddings */
+    height: auto; /* Ajuste la hauteur pour éviter des débordements */
   }
 
   h1 {
-    font-size: 4em; /* Ajuste la taille du titre sur petit écran */
-  }
-
-  h3 {
-    font-size: 2em; /* Ajuste la taille du sous-titre sur petit écran */
+    font-size: 4em; /* Réduction proportionnelle */
   }
 
   #premierTrait {
-    width: 50%; /* Rend le trait plus large sur mobile */
+    width: 50%; /* Agrandir le trait pour mobile */
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em; /* Adaptation encore plus petite */
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #premierTrait {
+    width: 70%; /* Trait plus large sur mobile */
   }
 }
 
