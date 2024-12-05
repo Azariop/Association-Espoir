@@ -53,62 +53,31 @@ header li a {
 /* **************** IMAGE PRINCIPALE ************* */
 #imagePrincipale {
   padding-top: 60px;
-  background: url(media/logolong\ \(2\).jpeg) no-repeat center center fixed;
+  background: url(media/logolong\ \(1\).jpeg) no-repeat fixed 50% 50%;
   background-size: cover;
-  height: 100vh; /* Utilise 100% de la hauteur de la fenêtre */
-  display: flex; /* Utilisation de flexbox pour centrer les contenus */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 799px;
 }
-
-/* Titre principal */
 h1 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: clamp(3rem, 6vw, 6em); /* Taille responsive */
-  margin-top: 0;
+  font-size: 6em;
+  margin-top: 100px;
   text-shadow: 1px 3px 2px rgb(0, 0, 0);
 }
-
-/* Trait sous le titre */
 #premierTrait {
   height: 1px;
   width: 25%;
+  margin: -3px auto;
   background-color: #FFFAE1;
   box-shadow: 1px 3px 2px black;
-  margin: 10px auto; /* Ajuste l'espacement */
 }
-
-/* Sous-titre */
 h3 {
   text-align: center;
-  color: rgb(254, 254, 254);
-  font-size: clamp(1.5rem, 3vw, 3em); /* Taille responsive */
+  color:rgb(254, 254, 254);
+  font-size: 3em;
   text-shadow: 1px 3px 2px black;
 }
-
-/* Media Queries (pour ajustements supplémentaires si nécessaire) */
-@media (max-width: 768px) {
-  #imagePrincipale {
-    padding-top: 30px; /* Réduction du padding sur mobile */
-  }
-
-  h1 {
-    font-size: 4em; /* Ajuste la taille du titre sur petit écran */
-  }
-
-  h3 {
-    font-size: 2em; /* Ajuste la taille du sous-titre sur petit écran */
-  }
-
-  #premierTrait {
-    width: 50%; /* Rend le trait plus large sur mobile */
-  }
-}
-
-
 /* *************** PRESENTATION ********************* */
 #presentation {
   background-color: #FFFAE1;
