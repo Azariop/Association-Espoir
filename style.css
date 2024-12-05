@@ -30,63 +30,72 @@ a {
 nav {
   overflow: hidden;
   background-color: #96BC42;
-  position: fixed;
-  width: 100%;
-  opacity: 0.9;
-
+  position: fixed; /* Barre fixe en haut */
+  top: 0; /* Alignée en haut */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  z-index: 100; /* Priorité visuelle supérieure */
+  opacity: 0.9; /* Semi-transparence */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour distinction */
 }
+
 header li {
   float: right;
   font-size: 1.2em;
+  list-style: none; /* Supprime les puces des listes */
+  margin: 0; /* Réinitialise les marges */
+  padding: 0; /* Réinitialise les paddings */
 }
+
 header li a {
   text-decoration: none;
   display: block;
   text-align: center;
   padding: 18px 16px;
+  color: white; /* Couleur du texte */
 }
+
 #logo {
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   float: left;
-}
-/* **************** IMAGE PRINCIPALE ************* */
-#imagePrincipale {
-  padding-top: 60px;
-  background: url(media/logolong\ \(2\).jpeg) no-repeat center center;
-  background-size: contain; /* Garde l'image entière visible */
-  background-color: white; /* Fond pour combler les espaces vides */
-  width: 100%; /* Prend toute la largeur de l'écran */
-  height: calc(100vw * 1237 / 2048); /* Calcule la hauteur basée sur le ratio exact */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  overflow: hidden;
+  color: white; /* Couleur du texte du logo */
+  font-size: 1.5em; /* Taille du texte du logo */
+  padding: 15px 20px; /* Espacement du logo */
 }
 
-/* Responsive adjustments */
+/* **************** IMAGE PRINCIPALE ************* */
+/* **************** IMAGE PRINCIPALE ************* */
+#imagePrincipale {
+  position: relative; /* Permet d'ajuster les enfants si nécessaire */
+  width: 100%; /* Prend toute la largeur */
+  height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Évite les débordements */
+  background-color: white; /* Couleur de fond en cas d'espaces vides */
+}
+
+/* Intégration de l'image en tant qu'élément enfant */
+#imagePrincipale img {
+  max-width: 100%; /* L'image s'adapte à la largeur de l'écran */
+  max-height: 100%; /* L'image s'adapte à la hauteur de l'écran */
+  object-fit: contain; /* Garde l'image entière visible sans rognage */
+  object-position: center; /* Centre l'image dans le conteneur */
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
   #imagePrincipale {
-    height: auto; /* Permet une hauteur flexible */
-    min-height: 60vh; /* Assure une hauteur minimale sur mobile */
-    background-size: contain; /* Toujours entièrement visible */
+    height: auto; /* Autorise une hauteur flexible sur les petits écrans */
+    padding: 20px; /* Ajoute un léger padding pour les marges */
+  }
+
+  #imagePrincipale img {
+    max-width: 90%; /* Réduit légèrement la taille de l'image sur mobile */
   }
 }
 
-
-
-/* Titre principal */
-h1 {
-  font-family: 'Dancing Script', cursive;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: clamp(2.5rem, 5vw, 6em); /* Taille responsive */
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7); /* Amélioration des ombres */
-}
 
 /* Trait sous le titre */
 #premierTrait {
